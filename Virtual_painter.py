@@ -17,7 +17,7 @@ cap.set(4, frameHeight)
 cap.set(10, 130) 
 
 
-# by using the color detection program, u acan find the cordinates (max and min of the trackbars then import them each for a specific colo)
+# by using the color detection program, u acan find the cordinates (max and min of the trackbars then import them each for a specific color)
 
 myColors = [
             [6,163,0,179,255,240]]
@@ -86,4 +86,5 @@ while True:
         drawOnCanvas(myPoints, myClorValues)
     cv.imshow("video", imgResult)
     if cv.waitKey(1) & 0xff == ord("q"):
+
         break
